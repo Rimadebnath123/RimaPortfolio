@@ -392,11 +392,132 @@
     margin-left: 240px;
     margin-top: -175px;
   }
-
- 
-
-  
-
-  
 }
 
+/* servises */
+
+/* .services h2 {
+  margin-bottom: 5rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services-container .service-box {
+  flex: 1 1 30rem;
+  background: rgb(8, 8, 108);
+  padding: 1rem 1.5rem 3.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: .2rem solid rgb(22, 22, 91);
+  transition: .5 ease;
+
+}
+
+.services-container .service-box:hover {
+  border-color: #59B2F4;
+  transform: scale(1.02);
+}
+
+.service-box {
+  font-size: 3.5rem;
+  color:#59B2F4;
+
+}
+
+.service-box h3 {
+  font-size: 2.6rem;
+  color: aliceblue;
+}
+
+.service-box p {
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+  color: aliceblue;
+} */
+
+/* Services Section Styling */
+#services {
+  background: linear-gradient(135deg, #9b1b76, #b94ea0); /* Purple and Pink Gradient */
+  padding: 60px 0;
+}
+
+.services .heading {
+  font-size: 2.5rem;
+  color: #fff; /* White for better contrast */
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.services .pup {
+  color: #ff7043;
+}
+
+/* Service Box Styles */
+.service-box {
+  background-color: #8f17be;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0; /* Initially hidden for animation */
+  transform: translateY(30px); /* Start from below */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Hover Effect */
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-box i {
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+/* Button Styling */
+.btn {
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Animation for Service Box */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply Animation to each Service Box */
+.service-box:nth-child(1) {
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.service-box:nth-child(2) {
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.service-box:nth-child(3) {
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
