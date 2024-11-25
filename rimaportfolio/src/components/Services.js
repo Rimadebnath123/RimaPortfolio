@@ -9,7 +9,7 @@ const Services = () => {
         </h2>
         <div className="row justify-content-center">
           <div className="col-md-4">
-            <div className="service-box shadow-lg rounded p-4 mb-4">
+            <div className="service-box">
               <i className="fa-solid fa-code fa-3x mb-3" style={{ color: '#007bff' }}></i>
               <h3 className="h4">Web Development</h3>
               <p>

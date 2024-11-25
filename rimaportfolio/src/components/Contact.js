@@ -1,24 +1,65 @@
-import React from 'react';
+import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-5">
+    <section id="contact" className="contact py-5">
       <div className="container">
-        <h2>Contact Me</h2>
+        <h2 className="heading text-center mb-4">
+          Contact <span className="pup">Me</span>
+        </h2>
         <form>
-          <div className="mb-3">
-            <label htmlFor="name" className="form-label">Name</label>
-            <input type="text" className="form-control" id="name" />
+          <div className="row mb-3">
+            <div className="col-md-6">
+              <div className="mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Full Name"
+                />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="mb-3">
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Email Address"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="row mb-3">
+            <div className="col-md-6">
+              <div className="mb-3">
+                <input
+                  type="tel"
+                  className="form-control"
+                  placeholder="Mobile Number"
+                />
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Email Subject"
+                />
+              </div>
+            </div>
           </div>
           <div className="mb-3">
-            <label htmlFor="email" className="form-label">Email</label>
-            <input type="email" className="form-control" id="email" />
+            <textarea
+              className="form-control"
+              rows="8"
+              placeholder="Your Message"
+            ></textarea>
           </div>
-          <div className="mb-3">
-            <label htmlFor="message" className="form-label">Message</label>
-            <textarea className="form-control" id="message" rows="3"></textarea>
+          <div className="text-center">
+            <button type="submit" className="btn btn-primary">
+              Send Message
+            </button>
           </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
         </form>
       </div>
     </section>

@@ -479,32 +479,6 @@
   transition: color 0.3s ease;
 }
 
-/* Button Styling */
-.btn {
-  text-transform: uppercase;
-  padding: 8px 20px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-
-/* Animation for Service Box */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* Apply Animation to each Service Box */
 .service-box:nth-child(1) {
@@ -521,3 +495,26 @@
   animation: fadeInUp 1s ease-in-out forwards;
   animation-delay: 0.9s;
 }
+
+
+.service-box:hover {
+  border-color:#59B2F4;
+  transform: scale(1.02);
+}
+
+.contact {
+  background-color: #4a148c;
+}
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+
+}
+
+
