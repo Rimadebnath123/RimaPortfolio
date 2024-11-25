@@ -91,7 +91,7 @@
 }
 
 /* Typed.js element styling */
-#element {
+#element{
   color: #ffe91e; /* Matches the highlight color */
   font-weight: bold;
   animation: textGlow 1.5s ease-in-out infinite;
@@ -257,3 +257,146 @@
   }
   
 }
+
+/* About Section */
+/* Progress bar animation */
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.skill-mf .progress .progress-bar {
+  animation: fillProgress 2s ease-out;
+}
+
+.about-img img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-img img:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes slideInImage {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.about-img {
+  animation: slideInImage 1.5s ease-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.about-heading {
+  animation: bounceIn 1s ease-in-out;
+  font-size: 2.5rem; /* Make it slightly larger */
+  
+}
+
+@keyframes slideInPop {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.pop {
+  animation: slideInPop 1.5s ease-out;
+  font-weight: bold;
+}
+
+
+.skill-mf .progress {
+  margin: 0.5rem 0; /* Reduced margin for compact height */
+  border-radius: 0;
+  height: 0.6rem; /* Reduced height */
+}
+
+.skill-mf .progress .progress-bar {
+  height: 0.6rem; /* Matches progress container height */
+  background-color: #ffbd39;
+}
+
+.about-img img {
+  width: 150px; /* Ensures square shape */
+  height: 190px; /* Ensures square shape */
+  border-radius: 50%; /* Makes it round */
+  border: 6px solid white;
+  margin: 0 auto; /* Centers the image horizontally */
+  display: block; /* Ensures proper centering within the div */
+}
+
+.pup {
+  color: #d9f506f8;
+}
+
+#about {
+  color: aliceblue;
+}
+
+.about-info {
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* Ensuring skill-mf and pop containers have equal height */
+.skill-mf,
+.pop {
+  min-height: 200px; /* Adjust this value to match your layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distributes content evenly */
+}
+
+.skill-mf {
+  padding: 1rem; /* Adds inner spacing for balance */
+}
+
+@media (min-width: 540px)and (max-width: 540px){
+  .about-img img {
+   
+    margin-left: 30px;
+    
+  }
+  .about-info {
+    margin-left: 240px;
+    margin-top: -175px;
+  }
+
+ 
+
+  
+
+  
+}
+

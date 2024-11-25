@@ -6,7 +6,7 @@ const Home = () => {
   useEffect(() => {
     // Initialize Typed.js
     const options = {
-      strings: ["Software Developer", "Web Developer", "Web Designer"],
+      strings: ["Software Developer", "Web Developer", "Web Designer","FullStack Developer","Teacher"],
       typeSpeed: 50,
     };
 
