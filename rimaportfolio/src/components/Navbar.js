@@ -2,9 +2,9 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark  fixed-top" style={{ backgroundColor: "#042743" }}>
       <div className="container">
-        <a className="navbar-brand" href="#home">My Portfolio</a>
+        <a className="navbar-brand" href="#home">Rima's Portfolio</a>
         <button
           className="navbar-toggler"
           type="button"
@@ -19,19 +19,19 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#home">Home</a>
+              <a className="nav-link custom-nav-link" href="#home">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">About</a>
+              <a className="nav-link custom-nav-link" href="#about">About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#services">Services</a>
+              <a className="nav-link custom-nav-link" href="#services">Services</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#portfolio">Portfolio</a>
+              <a className="nav-link custom-nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">Contact Me</a>
+              <a className="nav-link custom-nav-link" href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
