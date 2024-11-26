@@ -1,20 +1,58 @@
-.navbar-brand{
-    font-size: 2rem;
-    font-weight: 700;
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
 }
-.nav-item{
-    font-size: 1.2rem;
-    font-weight: bold;
+
+.nav-item {
+  font-size: 1.2rem;
+  font-weight: bold;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-50px); /* Start position off-screen */
+  animation: flyIn 0.5s ease-in-out forwards; /* Apply animation */
 }
+
+/* Apply animation delay to each nav item for a staggered effect */
+.nav-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.nav-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.nav-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.nav-item:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.nav-item:nth-child(5) {
+  animation-delay: 1s;
+}
+
 .custom-nav-link {
-    color: white !important; /* Default color */
-    text-decoration: none;   /* No underline */
-    transition: color 0.3s ease; /* Smooth transition on hover */
+  color: white !important; /* Default color */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.custom-nav-link:hover {
+  color: blue !important; /* Change to blue on hover */
+}
+
+/* Flying effect keyframes */
+@keyframes flyIn {
+  0% {
+    opacity: 0; /* Fully transparent */
+    transform: translateX(-50px); /* Start off-screen */
   }
-  
-  .custom-nav-link:hover {
-    color: blue !important; /* Change to blue on hover */
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* End position */
   }
+}
 
  /* General Section Styling */
 #home {

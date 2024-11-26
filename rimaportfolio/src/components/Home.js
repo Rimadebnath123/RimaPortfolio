@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <section id="home" className="vh-100">
-      <div className="home-content">
+      <div className="home-content mt-4">
         <h1>
           Hi, My name is <span className="pup">Rima</span>
         </h1>

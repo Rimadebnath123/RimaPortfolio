@@ -36,7 +36,7 @@ const Services = () => {
   return (
     <section id="services" className="services">
       <div className="container text-center">
-        <h2 className="heading mb-5 text-white fw-bold mt-4">
+        <h2 className="heading mb-5 text-white fw-bold mt-5">
           My <span className="pup fw-bold">Services</span>
         </h2>
         <div className="row justify-content-center">
