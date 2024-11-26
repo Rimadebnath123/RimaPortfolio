@@ -511,10 +511,13 @@
 
 /* portfolio */
 /* Add this CSS in your Portfolio component's stylesheet or in a global stylesheet */
+
 .project {
   position: relative;
   background: url('../public/image/project back.jpeg') no-repeat center center;
-  background-size: cover;
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Keep the image centered */
+  background-attachment: fixed; /* Keeps the background image fixed during scrolling */
   padding-bottom: 100px;
 }
 
@@ -531,11 +534,47 @@
   z-index: -1;  /* Ensure the overlay is behind the content */
 }
 
+.project-card {
+  background-color: #6a1b9a; /* Purple background */
+  color: #fff;
+  height: 100%; /* Ensure consistent height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card-img {
+  width: 100%; /* Take full width of the card */
+  max-height: 200px; /* Limit the height for uniformity */
+  object-fit: contain; /* Maintain aspect ratio, with padding for uneven dimensions */
+  padding: 10px; /* Add some space around the image */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.custom-card {
+  background-color: #3d1a7a; /* Purple background similar to your example */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Add rounded corners */
+  color: white; /* White text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add hover effect */
+}
+
+.custom-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.card-title,
+.card-text {
+  color: #fff; /* Ensure card text remains white */
+}
 
 /* Optional: Adjust the image size for different screen sizes */
 @media (max-width: 768px) {
   .project {
-    background-size: contain; /* Ensures the image doesn't overflow on smaller screens */
+    background-size: cover; /* Keep it cover on smaller screens as well */
+    background-position: center; /* Center the image */
   }
   h2 {
     font-size: 2rem;  /* Adjust font size for smaller screens */
@@ -545,15 +584,6 @@
     font-size: 1rem;  /* Adjust font size for smaller screens */
   }
 }
-
-
-
-
-
-
-
-
-
 
 /* contact */
 .contact {

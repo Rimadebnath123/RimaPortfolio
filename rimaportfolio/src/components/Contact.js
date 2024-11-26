@@ -4,8 +4,8 @@ const Contact = () => {
   return (
     <section id="contact" className="contact py-5">
       <div className="container">
-        <h2 className="heading text-center mb-4">
-          Contact <span className="pup">Me</span>
+        <h2 className="heading text-center fw-bold mb-4">
+          Contact <span className="pup fw-bold">Me</span>
         </h2>
         <div className="row align-items-center">
           {/* Left Side Image */}

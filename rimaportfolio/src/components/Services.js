@@ -24,8 +24,8 @@ const Services = () => {
   return (
     <section id="services" className="services">
       <div className="container text-center">
-        <h2 className="heading mb-5">
-          My <span className="pup">Services</span>
+        <h2 className="heading mb-5 text-white fw-bold">
+          My <span className="pup fw-bold">Services</span>
         </h2>
         <div className="row justify-content-center">
           <div className="col-md-4">
