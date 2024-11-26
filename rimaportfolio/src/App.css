@@ -394,127 +394,315 @@
   }
 }
 
-/* servises */
-
-/* .services h2 {
-  margin-bottom: 5rem;
-}
-
-.services-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.services-container .service-box {
-  flex: 1 1 30rem;
-  background: rgb(8, 8, 108);
-  padding: 1rem 1.5rem 3.5rem;
-  border-radius: 2rem;
-  text-align: center;
-  border: .2rem solid rgb(22, 22, 91);
-  transition: .5 ease;
-
-}
-
-.services-container .service-box:hover {
-  border-color: #59B2F4;
-  transform: scale(1.02);
-}
-
-.service-box {
-  font-size: 3.5rem;
-  color:#59B2F4;
-
-}
-
-.service-box h3 {
-  font-size: 2.6rem;
-  color: aliceblue;
-}
-
-.service-box p {
-  font-size: 1.6rem;
-  margin: 1rem 0 3rem;
-  color: aliceblue;
-} */
 
 /* Services Section Styling */
 #services {
-  background: linear-gradient(135deg, #9b1b76, #b94ea0); /* Purple and Pink Gradient */
+  background: linear-gradient(135deg, #720553, #e976ced0); /* Purple and Pink Gradient */
   padding: 60px 0;
 }
 
-.services .heading {
-  font-size: 2.5rem;
-  color: #fff; /* White for better contrast */
-  font-weight: 600;
-  margin-bottom: 50px;
-}
-
-.services .pup {
-  color: #ff7043;
-}
-
-/* Service Box Styles */
 .service-box {
-  background-color: #8f17be;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0; /* Initially hidden for animation */
-  transform: translateY(30px); /* Start from below */
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  height: 100%; /* Ensure boxes stretch equally */
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center; /* Center the icon and text horizontally */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease, background-color 0.3s ease;
+  background: #fff;
+  border: 2px solid transparent;
+  overflow: hidden; /* Prevent text overflow */
+  position: relative; /* For absolute positioning of animation elements */
+  padding: 20px; /* Add padding for spacing inside the box */
 }
 
-/* Hover Effect */
 .service-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1) rotate(-2deg); /* Slight scaling and rotation */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+  border: 2px solid #007bff; /* Border appears on hover */
+  background: linear-gradient(135deg, #007bff, #6f42c1); /* Gradient background on hover */
+}
+
+.service-box h3,
+.service-box p {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  text-align: center; /* Center text for better alignment */
+}
+
+.service-box:hover h3 {
+  transform: translateY(-5px); /* Slight upward movement */
+  opacity: 1; /* Ensure visibility */
+}
+
+.service-box:hover p {
+  transform: translateY(5px); /* Slight downward movement */
+  opacity: 0.8; /* Slightly dim text */
 }
 
 .service-box i {
-  color: #6c757d;
-  transition: color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.service-box:hover i {
+  transform: rotate(15deg) scale(1.2); /* Rotate and scale icon */
+  color: #fff; /* Change icon color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  /* For tablets and medium screens */
+  .service-box i {
+    font-size: 2.5rem; /* Adjust icon size for smaller screens */
+  }
+
+  .service-box h3 {
+    font-size: 1.25rem; /* Adjust heading size */
+  }
+
+  .service-box p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For small screens like phones */
+  #services {
+    padding: 40px 0; /* Reduce padding for smaller screens */
+  }
+
+  .service-box i {
+    font-size: 2rem; /* Further reduce icon size */
+  }
+
+  .service-box h3 {
+    font-size: 1.1rem; /* Adjust heading size */
+  }
+
+  .service-box p {
+    font-size: 0.85rem; /* Adjust paragraph size */
+  }
+}
+
+@media (max-width: 576px) {
+  /* For extra-small screens like very small phones */
+  .col-md-4{
+    margin-bottom: 15px;
+  }
+  .service-box {
+    padding: 8px;
+    margin-bottom: 25px !important; /* Add spacing between boxes */
+  }
+
+  .row {
+    row-gap: 15px; /* Add vertical gap between rows */
+  }
+
+  .service-box i {
+    font-size: 1.8rem; /* Make icon smaller */
+  }
+
+  .service-box h3 {
+    font-size: 1rem; /* Reduce heading size */
+  }
+
+  .service-box p {
+    font-size: 0.8rem; /* Reduce paragraph size */
+  }
+}
+
+/* portfolio */
+/* Add this CSS in your Portfolio component's stylesheet or in a global stylesheet */
+.project {
+  position: relative;
+  background: url('../public/image/project back.jpeg') no-repeat center center;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+/* Create an overlay with opacity */
+.project::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;  /* Inherit the background image */
+  opacity: 0.8;  /* Set the opacity of the background */
+  z-index: -1;  /* Ensure the overlay is behind the content */
 }
 
 
-/* Apply Animation to each Service Box */
-.service-box:nth-child(1) {
-  animation: fadeInUp 1s ease-in-out forwards;
-  animation-delay: 0.3s;
+/* Optional: Adjust the image size for different screen sizes */
+@media (max-width: 768px) {
+  .project {
+    background-size: contain; /* Ensures the image doesn't overflow on smaller screens */
+  }
+  h2 {
+    font-size: 2rem;  /* Adjust font size for smaller screens */
+  }
+  
+  p {
+    font-size: 1rem;  /* Adjust font size for smaller screens */
+  }
 }
 
-.service-box:nth-child(2) {
-  animation: fadeInUp 1s ease-in-out forwards;
-  animation-delay: 0.6s;
-}
-
-.service-box:nth-child(3) {
-  animation: fadeInUp 1s ease-in-out forwards;
-  animation-delay: 0.9s;
-}
 
 
-.service-box:hover {
-  border-color:#59B2F4;
-  transform: scale(1.02);
-}
 
+
+
+
+
+
+
+/* contact */
 .contact {
   background-color: #4a148c;
+  color: #fff;
 }
+
 .contact h2 {
   margin-bottom: 3rem;
 }
 
-.contact form {
-  max-width: 70rem;
-  margin: 1rem auto;
-  text-align: center;
-  margin-bottom: 3rem;
-
+/* Image Effects */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
 }
+
+.contact img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transform: scale(1.1) rotate(-2deg) translateY(-10px); /* Slight upward movement */
+  animation: upDownMovement 1s ease-in-out infinite; /* Continuous up and down movement */
+}
+
+/* Hover Effects for Image */
+.contact img:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Graphic Overlay */
+.graphic-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), transparent 60%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.image-wrapper:hover .graphic-overlay {
+  opacity: 1;
+}
+
+/* Form Effects */
+.contact-form {
+  animation: slideIn 1s ease-in-out;
+  position: relative;
+  transition: transform 0.8s ease, background-color 0.8s ease;
+}
+
+.contact-form:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Form Inputs */
+.contact input,
+.contact textarea {
+  color: white; /* Text color inside the input and textarea */
+  background-color: #0056b3; /* Blue background for input and textarea */
+  border: 1px solid #0056b3; /* Blue border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 0.75rem; /* Padding inside the input */
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition on focus */
+}
+
+/* Form Inputs Focus Effects */
+.contact input:focus,
+.contact textarea:focus {
+  background-color: #cb40ee; /* Darker blue background when focused */
+  border: 1px solid #0056b3; /* Darker blue border on focus */
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a slight box-shadow on focus */
+}
+
+/* Placeholder Text Styling */
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #f1f1f1; /* Lighter text color for placeholders */
+}
+
+/* Ensure white text remains in inputs after typing */
+.contact input,
+.contact textarea {
+  color: white !important; /* Force white text color */
+}
+
+
+/* Animations */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframe animation for Up and Down Movement */
+@keyframes upDownMovement {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-wrapper {
+    max-width: 300px;
+  }
+
+  .contact img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact img {
+    width: 100%;
+  }
+
+  .contact form {
+    margin-top: 20px;
+  }
+}
+
+
+
 
 
