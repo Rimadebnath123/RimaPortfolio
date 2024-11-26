@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/RimaPortfolio/static/css/main.f88a08f6.css",
-    "main.js": "/RimaPortfolio/static/js/main.147cc7a7.js",
+    "main.css": "/RimaPortfolio/static/css/main.284828d2.css",
+    "main.js": "/RimaPortfolio/static/js/main.79ba7477.js",
     "static/js/453.0a5f07aa.chunk.js": "/RimaPortfolio/static/js/453.0a5f07aa.chunk.js",
     "static/media/project back.jpeg": "/RimaPortfolio/static/media/project back.367b7e78ba95b7edb83e.jpeg",
     "index.html": "/RimaPortfolio/index.html",
-    "main.f88a08f6.css.map": "/RimaPortfolio/static/css/main.f88a08f6.css.map",
-    "main.147cc7a7.js.map": "/RimaPortfolio/static/js/main.147cc7a7.js.map",
+    "main.284828d2.css.map": "/RimaPortfolio/static/css/main.284828d2.css.map",
+    "main.79ba7477.js.map": "/RimaPortfolio/static/js/main.79ba7477.js.map",
     "453.0a5f07aa.chunk.js.map": "/RimaPortfolio/static/js/453.0a5f07aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f88a08f6.css",
-    "static/js/main.147cc7a7.js"
+    "static/css/main.284828d2.css",
+    "static/js/main.79ba7477.js"
   ]
 }
