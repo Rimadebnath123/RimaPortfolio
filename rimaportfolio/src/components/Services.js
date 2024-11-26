@@ -16,15 +16,27 @@ const Services = () => {
       });
     };
 
+    // Trigger the animation for each service box
+    const animateServiceBoxes = () => {
+      const serviceBoxes = document.querySelectorAll('.service-box');
+      serviceBoxes.forEach((box, index) => {
+        setTimeout(() => {
+          box.classList.add('animate'); // Add the animate class to trigger the animation
+        }, index * 200); // Stagger the animation for each box
+      });
+    };
+
     adjustTextSize();
+    animateServiceBoxes(); // Call the animation function
     window.addEventListener('resize', adjustTextSize); // Reapply on window resize
+
     return () => window.removeEventListener('resize', adjustTextSize);
-  }, []);
+  }, []); // Empty array to run once after the component mounts
 
   return (
     <section id="services" className="services">
       <div className="container text-center">
-        <h2 className="heading mb-5 text-white fw-bold">
+        <h2 className="heading mb-5 text-white fw-bold mt-4">
           My <span className="pup fw-bold">Services</span>
         </h2>
         <div className="row justify-content-center">

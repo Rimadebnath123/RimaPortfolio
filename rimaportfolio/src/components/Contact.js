@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact py-5">
       <div className="container">
-        <h2 className="heading text-center fw-bold mb-4">
+        <h2 className="heading text-center fw-bold mb-4 mt-5">
           Contact <span className="pup fw-bold">Me</span>
         </h2>
         <div className="row align-items-center">

@@ -6,7 +6,7 @@ const Home = () => {
   useEffect(() => {
     // Initialize Typed.js
     const options = {
-      strings: ["Software Developer", "Web Developer", "Web Designer","FullStack Developer","Teacher"],
+      strings: ["Software Developer", "Web Developer", "Web Designer","FullStack Developer"],
       typeSpeed: 50,
     };
 
@@ -46,7 +46,7 @@ const Home = () => {
         </div>
       </div>
       <div className="home-img">
-        <img src="image/bg.webp" alt="" />
+        <img src="image/bg.webp" alt="home" />
       </div>
     </section>
   );

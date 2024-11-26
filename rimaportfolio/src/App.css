@@ -18,7 +18,7 @@
 
  /* General Section Styling */
 #home {
-  background: linear-gradient(135deg, #7f1fd8, #4a148c); /* Gradient background */
+  background: linear-gradient(135deg, #7f1fd8, #4a148c); 
   color: white; /* Text color */
   display: flex;
   align-items: center;
@@ -397,8 +397,20 @@
 
 /* Services Section Styling */
 #services {
-  background: linear-gradient(135deg, #720553, #e976ced0); /* Purple and Pink Gradient */
+  background:#2f0572;
   padding: 60px 0;
+}
+/* Initial state for animation */
+.service-box {
+  opacity: 0; /* Start invisible */
+  transform: translateX(100px); /* Start 100px off to the right */
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* Final state after animation */
+.service-box.animate {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Return to original position */
 }
 
 .service-box {
@@ -408,7 +420,7 @@
   justify-content: flex-start; /* Align content at the top */
   align-items: center; /* Center the icon and text horizontally */
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease, background-color 0.3s ease;
-  background: #fff;
+  background: #88ecf0;
   border: 2px solid transparent;
   overflow: hidden; /* Prevent text overflow */
   position: relative; /* For absolute positioning of animation elements */
