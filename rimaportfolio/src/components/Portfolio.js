@@ -30,6 +30,12 @@ export const Portfolio = () => {
         imgUrl: 'image/text.png',
         link: 'https://rimadebnath123.github.io/firstapp/',
       },
+      {
+        title: 'Web App',
+        description: 'Fullstack application using Django.Only Do Crud operation and token authentication',
+        imgUrl: 'image/emp.webp',
+        link: 'https://employee-07vx.onrender.com',
+      },
     ];
     setPortfolio(projectData);
 
