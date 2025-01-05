@@ -19,7 +19,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section id="home" className="vh-100">
+    <section id="home" >
       <div className="home-content mt-4">
         <h1>
           Hi, My name is <span className="pup">Rima</span>
