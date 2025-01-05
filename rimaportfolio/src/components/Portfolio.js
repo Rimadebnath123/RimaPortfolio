@@ -7,7 +7,7 @@ export const Portfolio = () => {
   useEffect(() => {
     const projectData = [
       {
-        title: 'E-commerce Platform',
+        title: 'Myntra Clone',
         description: 'A fully responsive web application for online shopping.',
         imgUrl: 'image/myntra.jpg',
         link: 'https://exquisite-puppy-a18e18.netlify.app/',
@@ -64,14 +64,14 @@ export const Portfolio = () => {
               {/* Tab Navigation */}
               <ul className="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
                 <li className="nav-item" role="presentation">
-                  <a className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Tab 1</a>
+                  <a className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Tab</a>
                 </li>
-                <li className="nav-item" role="presentation">
+                {/* <li className="nav-item" role="presentation">
                   <a className="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Tab 2</a>
                 </li>
                 <li className="nav-item" role="presentation">
                   <a className="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Tab 3</a>
-                </li>
+                </li> */}
               </ul>
 
               {/* Tab Content */}
@@ -101,12 +101,12 @@ export const Portfolio = () => {
                     ))}
                   </div>
                 </div>
-                <div className="tab-pane fade text-white fw-bold" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                {/* <div className="tab-pane fade text-white fw-bold" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                   <p>it is empty</p>
-                </div>
-                <div className="tab-pane fade text-white fw-bold" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                </div> */}
+                {/* <div className="tab-pane fade text-white fw-bold" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                   <p>it is empty</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
