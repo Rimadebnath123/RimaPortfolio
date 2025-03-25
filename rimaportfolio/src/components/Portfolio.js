@@ -7,6 +7,12 @@ export const Portfolio = () => {
   useEffect(() => {
     const projectData = [
       {
+        title: 'Shopit App',
+        description: 'Fullstack e-commerce platform using Django and React.It is a shopping web application',
+        imgUrl: 'image/shop.jpg',
+        link: 'https://myshopit-app-dv5l.onrender.com',
+      },
+      {
         title: 'Myntra Clone',
         description: 'A fully responsive web application for online shopping.',
         imgUrl: 'image/myntra.jpg',
