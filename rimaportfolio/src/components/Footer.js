@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className="bg-dark text-white py-3">
       <div className="container d-flex justify-content-between align-items-center">
         <p className="mb-0">
-          Copyright &copy; 2024 by <span className="fw-bold">@rimadebnath</span> | All Rights Reserved!
+          Copyright &copy; 2025 by <span className="fw-bold">@rimadebnath</span> | All Rights Reserved!
         </p>
         <div>
           <button onClick={handleScrollToTop} className="btn btn-primary">
