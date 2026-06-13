@@ -1,25 +1,25 @@
-import React, { useState } from "react";
-import emailjs from "emailjs-com";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [isSending, setIsSending] = useState(false);
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSending(true);
 
-    emailjs
-      .sendForm(
-        "service_h2oam5c",   // from EmailJS
-        "template_j219gpi",  // from EmailJS
-        e.target,            // your form
-        "PWkw7pm9uGmBnHYP_"  // from EmailJS
-      )
+    emailjs.sendForm(
+      "service_h2oam5c",
+      "template_j219gpi",
+      form.current,
+      { publicKey: "PWkw7pm9uGmBnHYP_" }
+    )
       .then(
         (result) => {
           setIsSending(false);
           alert("Message sent successfully!");
-          e.target.reset(); // clear input form fields
+          form.current.reset(); // clear input form fields
         },
         (error) => {
           setIsSending(false);
@@ -52,7 +52,7 @@ const Contact = () => {
           {/* Right Side: Form wrapped in glass-card */}
           <div className="col-lg-6">
             <div className="glass-card contact-form-card">
-              <form onSubmit={sendEmail} className="contact-form">
+              <form ref={form} onSubmit={sendEmail} className="contact-form">
 
                 <div className="row g-3 mb-3">
                   <div className="col-md-6 text-start">

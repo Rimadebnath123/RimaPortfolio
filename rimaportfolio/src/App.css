@@ -798,12 +798,12 @@ body {
   width: 100%;
   max-width: 420px;
   filter: drop-shadow(0 15px 30px rgba(139, 92, 246, 0.15));
-  animation: floatImage 4s ease-in-out infinite alternate;
+  animation: floatImage 1s ease-in-out infinite alternate;
 }
 
 @keyframes floatImage {
-  0% { transform: translateY(-10px); }
-  100% { transform: translateY(10px); }
+  0% { transform: translateY(-12px); }
+  100% { transform: translateY(12px); }
 }
 
 .contact-form-card {
