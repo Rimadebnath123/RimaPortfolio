@@ -33,7 +33,7 @@ const Home = () => {
       <div className="container">
         <div className="row align-items-center min-vh-100 py-5">
           {/* Hero Left Content */}
-          <div className="col-lg-7 home-content text-start">
+          <div className="col-md-7 home-content text-start">
             <h1 className="fw-black">
               Hi, My name is <span className="pup">Rima</span>
             </h1>
@@ -84,7 +84,7 @@ const Home = () => {
           </div>
 
           {/* Hero Right Image */}
-          <div className="col-lg-5 d-flex justify-content-center home-img">
+          <div className="col-md-5 d-flex justify-content-center home-img">
             <div className="profile-glow-ring">
               <div className="profile-img-container">
                 <img src="image/bg.webp" alt="Rima Debnath Portrait" />

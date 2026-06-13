@@ -680,6 +680,10 @@ body {
   z-index: 2;
 }
 
+#Portfolio .container {
+  max-width: 1350px;
+}
+
 /* Nav Pills Upgrade */
 .portfolio-pills {
   background: rgba(255, 255, 255, 0.02);
@@ -721,7 +725,7 @@ body {
 .project-img-wrapper {
   position: relative;
   overflow: hidden;
-  height: 220px;
+  height: 250px;
   background: #0f0d23;
   display: flex;
   align-items: center;
@@ -775,6 +779,13 @@ body {
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 20px;
+}
+
+.project-card .btn-outline-premium {
+  padding: 14px 28px;
+  font-size: 1.05rem;
+  border-width: 2px;
+  font-weight: 700;
 }
 
 /* ==========================================

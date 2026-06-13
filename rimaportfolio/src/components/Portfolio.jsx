@@ -116,7 +116,7 @@ const Portfolio = () => {
             {/* Project Cards Grid */}
             <div className="row g-4">
               {filteredProjects.map((project, index) => (
-                <div className="col-md-4 col-sm-6 project-card-wrapper" key={index}>
+                <div className="col-lg-4 col-md-6 col-12 project-card-wrapper" key={index}>
                   <div className="glass-card project-card">
                     <div className="project-img-wrapper">
                       <img src={project.imgUrl} alt={project.title} />
